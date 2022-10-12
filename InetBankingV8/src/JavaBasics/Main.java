@@ -13,8 +13,11 @@ public class Main {
 		
 		System.out.println("\n");
 		
-		// Prints results from method three()
+		// Prints results from method third()
 		third();
+		
+		// Prints results from method four()
+		four();
 		
 	}
 	
@@ -37,6 +40,29 @@ public class Main {
 		}
 		
 		System.out.println(lists);
+		
+	}
+	
+	public static void four() {
+		
+		Set<Integer> sets = new HashSet<Integer>();
+		Set<Integer> removeSets = new HashSet<Integer>();
+		
+		
+		// Remove all odd numbers from the set
+		for(int i = 1; i <= 25; i++) {
+			sets.add(i);
+		}
+		
+		for(int i : sets) {
+			if(i % 2 != 0) {
+				removeSets.add(i);
+			}
+		}
+		
+		sets.removeAll(removeSets);
+		
+		System.out.println(sets);
 		
 	}
 
