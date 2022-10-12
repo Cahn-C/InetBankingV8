@@ -1,0 +1,2 @@
+module InetBankingV8 {
+}
