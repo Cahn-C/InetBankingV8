@@ -19,6 +19,11 @@ public class Main {
 		// Prints results from method four()
 		four();
 		
+		Cars infiniti = new Cars();
+		
+		infiniti.getCarTires();
+		System.out.println("This car has " + infiniti.getCarDoors(2) + " doors");
+		
 	}
 	
 	public static void sec() {
